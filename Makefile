@@ -13,9 +13,6 @@ TESTBINS=$(patsubst $(TEST)/%.cpp, $(TEST)/bin/%, $(TESTS))
 LIBDIR=lib
 LIB=$(LIBDIR)/gfx.a
 
-a.out: $(SRC)/*.cpp $(SRC)/*.hpp
-	$(CC) $(CFLAGS) -o a.out $(SRC)/*.cpp $(LDFLAGS)
-
 all:$(LIB)
 
 debug: CFLAGS=-g -Wall -Wpedantic -O0
