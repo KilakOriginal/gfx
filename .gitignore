@@ -18,6 +18,9 @@
 *.dylib
 *.dll
 
+# Compiled shader files
+*.spv
+
 # Fortran module files
 *.mod
 *.smod
