@@ -2,6 +2,7 @@
 #define GFX_APP_HPP_
 
 #include "gfx_window.hpp"
+#include "gfx_pipeline.hpp"
 
 namespace gfx
 {
@@ -17,6 +18,8 @@ namespace gfx
 
         private:
             GFXwindow window{WIDTH, HEIGHT, "App"};
+            GFXpipeline pipeline{"/home/malik/MEGA/Code/gfx/gfx/src/shaders/simple_shader.vert.spv",
+                "/home/malik/MEGA/Code/gfx/gfx/src/shaders/simple_shader.frag.spv"};
     };
 }
 
