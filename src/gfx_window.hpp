@@ -14,6 +14,8 @@ namespace gfx
             GFXwindow(const int width,
                     const int height,
                     const std::string title);
+            GFXwindow(const GFXwindow& other) = delete;
+            GFXwindow& operator=(const GFXwindow& other) = delete;
             ~GFXwindow();
 
             const bool shouldClose() const;
